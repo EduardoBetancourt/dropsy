@@ -1,6 +1,10 @@
 <div class="parentContainer">
   <div class="container mayo">
-    <strong><p class="date"><%= @wod.date.strftime("%a, %d %b %Y") %></p></strong>
-    <p><%= simple_format(@wod.description) %></p>
+    <div class="flex space-around">
+      <strong><p class="date"><%= @wod.date.strftime("%a, %d %b %Y") %></p></strong>
+    </div>
+    <div class="description">
+      <p><%= simple_format(@wod.description) %></p>
+    </div>
   </div>
 </div>
