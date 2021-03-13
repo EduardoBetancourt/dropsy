@@ -3,8 +3,9 @@ require 'date'
 
 class PagesController < ApplicationController
   def index
-    @workouts = Workout.all
-    @wod = Workout.find_by(date: Date.today)
+    #@workouts = Workout.all
+    # @wod = Workout.find_by(date: Date.today)
+    @wod = "SQUATS"
   end
 
   def upload_csv
